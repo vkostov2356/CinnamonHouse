@@ -1,0 +1,52 @@
+.itemBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+p.itemName {
+  grid-column: 1/-1;
+  width: 100%;
+  font-weight: 500;
+  color: #8a454d;
+  font-family: cursive;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+div.itemBox img {
+  margin: 0;
+  transform: none;
+  width: 7rem;
+}
+
+p.itemPrice {
+  background-color: #8a454d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: -1rem;
+  font-family: cursive;
+  font-size: 1.4rem;
+}
+
+div.itemVegan {
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.6rem;
+  color: rgb(56, 146, 52);
+  border-radius: 50%;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

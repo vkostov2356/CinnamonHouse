@@ -1,0 +1,118 @@
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transition: all 3s;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+.heading {
+  background-color: blue;
+  position: fixed;
+  filter: brightness(5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
+  border-radius: -1rem;
+}
+
+.outer {
+  /* position: absolute;
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  justify-content: space-between;
+  height: 80%;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 6rem;
+}
+
+.outer h1 {
+  font-size: 6.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.outer span.love {
+  font-size: 6.5rem;
+  background-color: rgba(255, 88, 107, 0.5);
+  padding: 6rem 4rem;
+
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 81% 19% 82% 18% / 72% 61% 39% 28%;
+}
+
+button.CTAbtn {
+  border: none;
+  box-shadow: 0px 0px 0px 3px rgba(255, 88, 107, 0.5) inset;
+  padding: 1rem 4rem;
+  border-radius: 20px;
+  background: none;
+  font-size: 2.4rem;
+  color: rgba(33, 33, 33, 0.8);
+  cursor: pointer;
+}
+
+button.CTAbtn:hover,
+button.CTAbtn:active {
+  background-color: rgba(255, 88, 107, 0.5);
+  border: none;
+}
+
+.CTAbtn span {
+  margin-left: 10px;
+}
+
+.landingPageReviews {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+
+.landingPagePeople {
+  display: flex;
+}
+
+.landingPagePeople img {
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.landingPagePeople img:last-child {
+  margin: 0;
+}
+
+.landingPagePeopleTxt {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.landingPagePeopleTxt span {
+  color: rgba(255, 88, 107, 1);
+  font-weight: 700;
+}
+
+.landingPageCTARev {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

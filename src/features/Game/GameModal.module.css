@@ -1,0 +1,34 @@
+.gameModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%;
+  background-color: rgba(255, 233, 236, 1);
+  border-radius: 12px;
+}
+
+.blur {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.closeModal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: rgb(209, 150, 158);
+}

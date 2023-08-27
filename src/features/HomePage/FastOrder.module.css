@@ -1,0 +1,43 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: #ffe9ec; */
+  background-size: cover;
+  padding: 4rem;
+  width: 80%;
+  align-self: center;
+  border-radius: 12px;
+  gap: 4rem;
+  justify-items: center;
+  transition: all 3s;
+}
+
+.form input,
+.datePicker {
+  width: 15rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  border: none;
+  background-color: #ffff;
+  border-radius: 12px;
+}
+
+.form button.submitForm {
+  grid-column: 1/-1;
+  border: none;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.form button.submitForm:hover,
+.form button.submitForm:active {
+  background-color: rgba(255, 88, 107, 0.8);
+  color: #fff;
+  font-weight: 800;
+}

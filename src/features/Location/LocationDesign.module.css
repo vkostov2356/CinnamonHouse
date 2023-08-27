@@ -1,0 +1,110 @@
+.location {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(51, 51, 51, 0.9),
+      rgba(51, 51, 51, 0.6)
+    ),
+    url("../../../public/Images/Location/locationBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(255, 233, 236);
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  align-items: center;
+}
+
+.locationBox {
+  background-color: rgba(33, 33, 33, 0.7);
+  width: 70%;
+  border-radius: 50px;
+  padding: 4rem;
+  margin-bottom: 10rem;
+}
+
+.locationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+
+  position: relative;
+}
+
+.locationDetails img {
+  width: 50%;
+  align-self: center;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  margin-bottom: -10rem;
+}
+.locationText,
+.locationPhone {
+  padding: 0 10rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 300;
+  grid-column: 1/-1;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.locationPhone {
+  padding: 2rem 0;
+  border-bottom: 2px solid rgba(255, 233, 236);
+  border-top: 2px solid rgba(255, 233, 236);
+  width: 50%;
+}
+
+.locationText p {
+  margin: 0;
+}
+
+.locationOpeningHours {
+  align-self: center;
+  border: 2px solid rgba(255, 233, 236);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  width: 70%;
+  justify-items: center;
+}
+
+.locationOpeningHours h3 {
+  letter-spacing: 10px;
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid rgba(255, 233, 236);
+  border-top: 6px solid rgba(255, 233, 236);
+  color: rgba(255, 233, 236);
+  grid-column: 1/-1;
+  width: 80%;
+  text-align: center;
+}
+
+.locationOpeningHours ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  list-style: none;
+}
+
+.locationMap {
+  align-self: center;
+  height: 30rem;
+  width: 80rem;
+}
+
+.map {
+  height: 30rem;
+  width: 80rem;
+  border-radius: 12px;
+}

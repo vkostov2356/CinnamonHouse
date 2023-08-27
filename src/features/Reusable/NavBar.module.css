@@ -1,0 +1,79 @@
+.navBar {
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+
+.logoBig {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  color: rgba(255, 88, 107, 0.5);
+  color: #fff;
+  font-size: 7.5rem;
+  margin-bottom: 3rem;
+}
+
+.textLogo h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  /* color: rgb(255, 88, 107); */
+  color: #fff;
+  font-family: cursive;
+  letter-spacing: 5px;
+}
+
+.textLogo p {
+  font-size: 2rem;
+  font-style: italic;
+  color: #fff;
+}
+
+.navMenu {
+  border: none;
+  background: none;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s;
+}
+.navMenu:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sideNav {
+  padding: 4rem;
+  background-color: #fff;
+  position: absolute;
+  top: 15rem;
+  right: 0;
+  transition: all 0.3s ease-in;
+  width: 30rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+div div a,
+div div a:visited {
+  color: #666;
+}
+
+div div a:hover,
+div div a:active {
+  color: #333;
+}
+
+.sideNav span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+.gameDesign {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(51, 51, 51, 0.9),
+      rgba(51, 51, 51, 0.6)
+    ),
+    url("../../../public/Images/Game/gameBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 233, 236);
+  transition: all 0.3s;
+}
+
+.gameDesignBox {
+  background-color: rgba(33, 33, 33, 0.7);
+  width: 70%;
+  border-radius: 50px;
+  padding: 8rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  position: relative;
+}
+
+.question {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: rgba(255, 233, 236);
+}
+
+.gameDesignBox h1 {
+  font-family: serif;
+  font-size: 5rem;
+  text-align: center;
+}

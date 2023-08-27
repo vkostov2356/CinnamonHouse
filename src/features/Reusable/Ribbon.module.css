@@ -1,0 +1,39 @@
+h1.ribbon {
+  position: relative;
+  margin: 0 auto 20px;
+  padding: 10px 40px;
+  text-align: center;
+  background-color: #ee9da6;
+  width: 80%;
+  color: #fff;
+  font-family: monospace;
+  letter-spacing: 1rem;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+}
+
+h1.ribbon::before,
+h1.ribbon::after {
+  content: "";
+  width: 80px;
+  height: 100%;
+  background-color: #eb8f99;
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+
+  background-image: linear-gradient(45deg, transparent 50%, #8a454d 50%);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+h1.ribbon::before {
+  left: -60px;
+}
+
+h1.ribbon::after {
+  right: -60px;
+  transform: scaleX(-1); /* flip horizontally */
+}

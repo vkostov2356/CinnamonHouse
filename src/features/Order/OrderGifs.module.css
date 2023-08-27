@@ -1,0 +1,12 @@
+.orderGifBox {
+  padding: 1rem;
+  background-image: url(../../../public/Images/Cart/gif3.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200%;
+  transform: translateX(-25%);
+  height: 80%;
+  opacity: 90%;
+  border-radius: 50px 0 50px 0;
+}

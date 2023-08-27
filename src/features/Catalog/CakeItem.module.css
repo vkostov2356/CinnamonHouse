@@ -1,0 +1,117 @@
+.flipCard {
+  background-color: transparent;
+  width: 15rem;
+  height: 15rem;
+  cursor: pointer;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  /* box-shadow: 0 0 10px 1px #8a454dae; */
+}
+
+.flipCardBack {
+  transform: rotateY(180deg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.flipCardFront img.itemPhoto {
+  width: 10rem;
+  transform: translateY(-50%);
+  /* box-shadow: 0 0 20px 1px #412124ae; */
+  background: none;
+}
+
+.veganSticker {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.6rem;
+  color: rgb(56, 146, 52);
+  border-radius: 50%;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+}
+div p.name {
+  height: auto;
+  margin: 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;
+  font-weight: 500;
+  color: #8a454d;
+  font-family: cursive;
+}
+div p.price {
+  margin: 0;
+  height: auto;
+}
+
+.servings {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.6rem;
+  color: #8a454d;
+  font-family: cursive;
+}
+
+.flipCardBack p {
+  width: 100%;
+}
+.ingredients {
+  text-align: left;
+  color: #333;
+  font-size: 1.2rem;
+}
+div p.price {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  background-color: #8a454d;
+  width: 50%;
+  color: #fff;
+  border-radius: 12px;
+  font-family: cursive;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}

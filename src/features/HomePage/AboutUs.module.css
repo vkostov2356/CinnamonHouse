@@ -1,0 +1,118 @@
+.aboutUsSection {
+  background-image: url("../../../public/Images/HomePage/dripBackground1.png");
+  background-position: 10% -1%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.aboutUsBox {
+  transform: translate(0%, 0%);
+  height: 85%;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+  border-radius: 20px;
+  margin-bottom: 10rem;
+}
+
+.aboutUsText img {
+  width: 90%;
+  justify-self: center;
+  border-radius: 12px;
+}
+
+.aboutUsText {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+}
+.aboutUsText div.aboutUsInfo {
+  padding: 2rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  line-height: 1.3;
+}
+
+.aboutUsText div.aboutUsInfo h3 {
+  font-size: 4rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.aboutUsText div.aboutUsInfo p {
+  font-family: sans-serif;
+}
+
+.flipCard {
+  background-color: transparent;
+  width: 40rem;
+  height: 40rem;
+  cursor: pointer;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipCardBack {
+  transform: rotateY(180deg);
+}
+
+.purchaseNow {
+  border: none;
+  border-radius: 9px;
+  padding: 1rem;
+  background-color: #ffe9ec;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.purchaseNow:hover,
+.purchaseNow:active {
+  background-color: #8a454d;
+  color: #fff;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.fastOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+}

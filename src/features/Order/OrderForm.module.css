@@ -1,0 +1,128 @@
+.orderForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.orderForm input,
+.orderForm select,
+.orderForm textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+
+.orderForm label {
+  text-transform: uppercase;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.address input:first-child {
+  grid-column: 1/-1;
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.productType {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.productType input {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.productType button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2ed52e;
+  font-size: 4rem;
+  background-color: #fff;
+}
+.productType img {
+  height: 10rem;
+}
+
+img.cakePop {
+  padding: 1rem;
+}
+
+.allergies ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1.4rem;
+  list-style: none;
+  letter-spacing: 1px;
+  align-items: start;
+}
+
+.allergies span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.allergies input {
+  width: 100%;
+}
+
+.allergies div input {
+  cursor: pointer;
+}
+
+.orderForm button.submit {
+  border: none;
+  grid-column: 1/-1;
+  width: 50%;
+  justify-self: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  padding: 1.4rem;
+  border-radius: 50px;
+  box-shadow: -4px -4px 0px 4px rgb(203, 66, 82) inset;
+  background-color: rgba(255, 88, 107, 1);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 800;
+  transition: all 0.3s;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.orderForm button.submit:hover,
+.orderForm button.submit:active {
+  transform: scale(1.1);
+  font-size: 2.4rem;
+  box-shadow: none;
+  letter-spacing: 10px;
+}

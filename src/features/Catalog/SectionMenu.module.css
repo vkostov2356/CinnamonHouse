@@ -1,0 +1,118 @@
+.demoPage {
+  width: 40rem;
+  height: 40rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 1px #412124ae inset;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.demoPage p {
+  width: 4rem;
+  height: 4rem;
+}
+
+.cover {
+  background-image: linear-gradient(
+      rgba(72, 42, 57, 0.3),
+      rgba(72, 42, 57, 0.3)
+    ),
+    url(../../../public/Images/Catalog/cover1.png);
+  background-position: top;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: -10px 0 20px 1px #333;
+  display: flex;
+  justify-content: center;
+}
+
+.book {
+  width: 100%;
+  height: 55rem;
+  transition: all 0.3s;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.book,
+.cover2,
+.coverDesign,
+.coverCircle,
+.coverCircle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover2 {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.coverDesign {
+  height: 15%;
+  width: 100%;
+  background-color: #412124;
+}
+.coverCircle {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-color: #f0e2e4;
+}
+
+.coverCircle span {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  border: 1px dashed #333;
+  transition: all 0.3s;
+}
+
+.cover2 p {
+  font-size: 2rem;
+  font-family: cursive;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  bottom: 4rem;
+  right: 50%;
+  transform: translateX(50%);
+  width: 60%;
+  border-radius: 9px;
+  text-align: center;
+  background-color: #412124ae;
+  /* background-color: rgba(76, 37, 42, 0.9); */
+}
+
+.touch {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: #fff;
+  font-size: 4rem;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

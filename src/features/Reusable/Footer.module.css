@@ -1,0 +1,74 @@
+.footer {
+  /* height: 20rem; */
+  background-color: #333;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;
+  padding: 4rem 0;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logoSection {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  /* color: rgba(230, 115, 128, 1); */
+  font-size: 7rem;
+}
+
+.textLogo h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  /* color: rgba(230, 115, 128, 1);
+   */
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  letter-spacing: 5px;
+}
+
+.socials {
+  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1rem;
+}
+
+.footerCopyright {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+div a.footerLink:hover,
+div a.footerLink:active {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+div a.footerLink:visited,
+div a.footerLink {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 3px;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 1);
+}
