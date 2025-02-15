@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+node_modules/
+.package-lock.json
+.package.json.tailwind.config.js
+.vite.config.js
